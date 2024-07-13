@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="https://www.edulyte.com/maths/basic-math-formulas/">Formulas</a></li>
+      <li><a href="https://www.geeksforgeeks.org/math-tricks/">Tricks</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+	<h1>My Calculator</h1>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="deleteLast()">DEL</button>
+            <button class="button" onclick="appendOperator('/')">/</button>
+            <button class="button" onclick="appendOperator('*')">*</button>
+            <button class="button" onclick="appendNumber(7)">7</button>
+            <button class="button" onclick="appendNumber(8)">8</button>
+            <button class="button" onclick="appendNumber(9)">9</button>
+            <button class="button" onclick="appendOperator('-')">-</button>
+            <button class="button" onclick="appendNumber(4)">4</button>
+            <button class="button" onclick="appendNumber(5)">5</button>
+            <button class="button" onclick="appendNumber(6)">6</button>
+            <button class="button" onclick="appendOperator('+')">+</button>
+            <button class="button" onclick="appendNumber(1)">1</button>
+            <button class="button" onclick="appendNumber(2)">2</button>
+            <button class="button" onclick="appendNumber(3)">3</button>
+			<button class="button" onclick="appendNumber('.')">.</button>
+            <button class="button equal" onclick="calculateResult()">=</button>
+            <button class="button zero" onclick="appendNumber(0)">0</button>
+            
+        </div>
+    </div>
+	
+    <script src="script4.js"></script>
+</body>
+<footer>
+  <p id="copyright">&copy; 2024 Calculator</p>
+  <p id="creator">Created by: <span id="creator-name">Simona Singh</span></p>
+  <p id="contact">Contact: <span id="contact-email">singhmona3552@gmail.com</span></p>
+</footer>
+</html>
